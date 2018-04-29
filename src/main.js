@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import page from 'page';
 
-Vue.config.productionTip = false
+import router from './routes';
 
-new Vue({
-  render: h => h(App)
+import '@/assets/sass/common.scss';
+
+const app = new Vue({
+  router,
+  template: '<router-view></router-view>'
 }).$mount('#app')
